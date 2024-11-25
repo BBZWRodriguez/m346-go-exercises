@@ -33,9 +33,8 @@ func main() {
 	}
 	defer logFile.Close()
 
-	// Write output to files
 	fmt.Fprintln(eyesFile, "The dice shows", eyes, "eyes")
 	fmt.Fprintln(logFile, "The dice shows", eyes, "eyes")
 	fmt.Fprintln(logFile, "The dice was rolled at", when)
-	// go run ex3/main.go TODO
+
 }
